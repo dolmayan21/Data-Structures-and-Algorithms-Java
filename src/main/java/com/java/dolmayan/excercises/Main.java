@@ -5,29 +5,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList myLinkedList = new LinkedList(1);
+        DoublyLinkedList myDLL = new DoublyLinkedList(7);
 
-        myLinkedList.append(1);
-        myLinkedList.append(2);
-        myLinkedList.append(2);
-        myLinkedList.append(3);
-        myLinkedList.append(3);
-        myLinkedList.append(3);
-        myLinkedList.append(4);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
 
-        myLinkedList.removeDuplicates();
+        System.out.println("\nDoubly Linked List:");
+        myDLL.printList();
+        myDLL.append(3);
+        myDLL.append(4);
 
-        myLinkedList.printList();
+        System.out.println("\nNode removed:  " + myDLL.removeLast().value);
+        myDLL.prepend(1);
 
-        /*
-            EXPECTED OUTPUT:
-            ----------------
-            1
-            2
-            3
-            4
+        System.out.println("\nNew Doubly Linked List:");
+        myDLL.printList();
 
-        */
 
     }
 

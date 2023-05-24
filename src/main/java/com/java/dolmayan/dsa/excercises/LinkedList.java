@@ -1,4 +1,4 @@
-package com.java.dolmayan.excercises;
+package com.java.dolmayan.dsa.excercises;
 
 public class LinkedList {
     private Node head;

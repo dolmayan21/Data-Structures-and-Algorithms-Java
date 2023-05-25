@@ -122,6 +122,14 @@ public class DoublyLinkedList {
         return temp;
     }
 
+    public void swapFirstLast(){
+        int temp;
+        temp = head.value;
+        head.value = tail.value;
+        tail.value = temp;
+
+    }
+
 
 
 

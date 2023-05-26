@@ -146,6 +146,25 @@ public class DoublyLinkedList {
         tail = temp;
     }
 
+    public boolean isPalindrome() {
+        if (length <= 1) return true;
+
+        int index = 0;
+        Node first = head;
+        Node second = tail;
+
+        while (index < length/2) {
+
+            if(first.value != second.value){
+                return false;
+            }
+            first = first.next;
+            second = second.prev;
+            index ++;
+        }
+        return true;
+    }
+
 
 
 

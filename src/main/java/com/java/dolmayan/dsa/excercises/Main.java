@@ -12,9 +12,15 @@ public class Main {
         myDLL.append(4);
         myDLL.append(5);
 
-        myDLL.append(6);
-        myDLL.append(7);
-        myDLL.append(8);
+        myDLL.append(4);
+        myDLL.append(3);
+        myDLL.append(2);
+        myDLL.append(1);
+
+
+
+
+
 
 
         System.out.println("\nDoubly Linked List:");
@@ -24,6 +30,8 @@ public class Main {
 
         System.out.println("\nNew Doubly Linked List:");
         myDLL.printList();
+
+        System.out.println("\nIs this palindrome ? :" + myDLL.isPalindrome());
 
 
     }

@@ -20,7 +20,7 @@ public class Main {
         System.out.println("\nDoubly Linked List:");
         myDLL.printList();
 
-        myDLL.swapFirstLast();
+        myDLL.reverse();
 
         System.out.println("\nNew Doubly Linked List:");
         myDLL.printList();

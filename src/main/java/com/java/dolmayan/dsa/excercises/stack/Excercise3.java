@@ -1,10 +1,25 @@
 package com.java.dolmayan.dsa.excercises.stack;
 
+import java.util.ArrayList;
+
 public class Excercise3 {
 
-    public static void sortStack(StackE1 stack){
+    public static void sortStack(StackE1<Integer> stack){
+        StackE1 <Integer> additionalStack = new StackE1();
 
 
+        while(!stack.isEmpty()){
+            int temp = stack.pop();
+
+            while(!additionalStack.isEmpty() && additionalStack.peek() > temp) {
+                stack.push(additionalStack.pop());
+            }
+            additionalStack.push(temp);
+        }
+
+        while(!additionalStack.isEmpty()){
+            stack.push(additionalStack.pop());
+        }
 
     }
 
@@ -12,7 +27,7 @@ public class Excercise3 {
         StackE1<Integer> stack = new StackE1<>();
         stack.push(3);
         stack.push(2);
-        stack.push(5);
+        stack.push(5 );
         stack.push(1);
         stack.push(4);
 

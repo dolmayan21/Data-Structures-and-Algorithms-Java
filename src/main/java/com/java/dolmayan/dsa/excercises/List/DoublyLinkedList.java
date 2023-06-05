@@ -30,9 +30,6 @@ public class DoublyLinkedList {
         System.out.println("Tail: " + tail.value);
     }
 
-    public void getLength() {
-        System.out.println("Length: " + length);
-    }
 
     public void printList() {
         Node temp = head;

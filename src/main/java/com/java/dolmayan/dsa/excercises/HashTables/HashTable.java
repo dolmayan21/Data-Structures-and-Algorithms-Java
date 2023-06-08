@@ -36,6 +36,7 @@ public class HashTable {
         for(int i =0; i<keyChars.length; i++){
          int asciiValue = keyChars[i];
          hash = (hash + asciiValue * 23) % dataMap.length;
+            System.out.println("HASH------>" + hash);
         }
         return hash;
     }

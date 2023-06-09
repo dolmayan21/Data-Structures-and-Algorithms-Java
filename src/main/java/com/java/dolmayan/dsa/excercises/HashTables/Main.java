@@ -6,7 +6,7 @@ public class Main {
 
         HashTable myHashTable = new HashTable();
 
-        /*
+
         myHashTable.set("nails", 100);
         myHashTable.set("tile", 50);
         myHashTable.set("lumber", 80);
@@ -14,8 +14,13 @@ public class Main {
         myHashTable.set("screws", 140);
 
 
-         */
+
         myHashTable.printTable();
+
+        System.out.println(myHashTable.keys());
+
+
+
 
         /*
             EXPECTED OUTPUT:

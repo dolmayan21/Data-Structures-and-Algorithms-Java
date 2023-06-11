@@ -4,12 +4,7 @@ public class mergeTwoLists21 {
 
     public static void main(String[] args) {
 
-
-
     }
-
-
-
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 

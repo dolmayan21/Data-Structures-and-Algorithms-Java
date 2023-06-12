@@ -13,31 +13,17 @@ public class removeDuplicates26 {
     }
 
 
-    public static int removeDuplicates(int[] nums) {
-
-        ArrayList<Integer> experctedNums = new ArrayList<>();
-
-        int init =1;
-        int temp = nums[0];
-
-
-        for(int i = 1; i<nums.length; i++ ) {
-
-            if(temp != nums[i]){
-                System.out.println(nums[i]);
-                experctedNums.add(temp);
-                temp = nums[i];
-
-
+    public static int removeDuplicates(int[] nums) { 
+            int i=0;
+            for(int j=1;j<nums.length;j++){
+                if(nums[i]!=nums[j]){
+                    i++;
+                    nums[i]=nums[j];
+                }
             }
-
+            return i+1;
 
         }
-
-
-
-        return experctedNums.size();
-    }
 
 
 }

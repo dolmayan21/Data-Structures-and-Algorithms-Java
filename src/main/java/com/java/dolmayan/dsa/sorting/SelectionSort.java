@@ -14,7 +14,7 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-        // Swap current index with minimum element in rest of list
+            // Swap current index with minimum element in rest of list
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;

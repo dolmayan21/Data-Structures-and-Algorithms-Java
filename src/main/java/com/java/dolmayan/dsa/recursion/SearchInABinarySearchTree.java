@@ -3,7 +3,7 @@ package com.java.dolmayan.dsa.recursion;
 public class SearchInABinarySearchTree {
 
 /**
- *Definition for a binary tree node.
+ *Definition for a binary tree node. (Recursion)
  **/
  public class TreeNode {
 
